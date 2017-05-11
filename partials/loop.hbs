@@ -1,5 +1,5 @@
 {{#foreach posts}}
-<article class="post-list{{#unless feature_image}} no-image{{/unless}} {{post_class}}">
+<article class="pb30 post-list{{#unless feature_image}} no-image{{/unless}} {{post_class}}">
 	{{#if feature_image}}
 		{{^has tag="no-image"}}
 		<a href="{{url}}" rel="bookmark">
@@ -10,6 +10,13 @@
 		{{/has}}
 	{{/if}}
 	<div class="entry-content">
+
+
+		<div class="entry-header">
+			<h2 class="entry-title"><a href="{{url}}" rel="bookmark">{{title}}</a></h2>
+		</div>
+
+		<p>{{excerpt words="26"}}...</p>
 		<div class="entry-meta clearfix">
 			{{#if primary_author.profile_image}}<img class="author-image" src="{{img_url primary_author.profile_image}}" alt="{{primary_author.name}}">{{/if}}
 			<div class="right">
@@ -25,12 +32,6 @@
 				</span>
 			</div>
 		</div>
-
-		<div class="entry-header">
-			<h2 class="entry-title"><a href="{{url}}" rel="bookmark">{{title}}</a></h2>
-		</div>
-
-		<p>{{excerpt words="26"}}...</p>
 	</div>
 	<div class="entry-footer">
 		<span class="cat-links">

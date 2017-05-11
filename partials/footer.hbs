@@ -1,22 +1,38 @@
-<footer id="colophon">
-	<div class="top row">
-		<div class="col-md-3 column">
-			{{> widgets/widget-text}}
+<footer>
+	<div class="container f14">
+		<div class="col-md-6 column">
+			<div class="fine-print">
+				© 2017 All Rights Reserved Wishberry Online Services Pvt. Ltd.<br/>
+				(CIN: U74300MH2009PTC191803)<br/>
+				102/103 Matharu Arcade, Subhash Road, Vile Parle (E), Mumbai 400057.
+				<br/>
+				Contact No : +9122-49426200
+			</div>
 		</div>
-		<div class="col-md-3 column">
-			{{> widgets/widget-links}}
+		<div class="col-md-2 column">
+			<h4 class="fw-b mb15 f16">ABOUT</h4>
+			<ul class="rte-styles tc-white fw-b">
+				<li class="mb10"><a href="/about" class="cursor block">About Triber</a></li>
+				<li class="mb10"><a href="/how-it-works" class="cursor block">How Triber Works</a></li>
+				<li class="mb10"><a href="/fees" class="cursor block">Pricing</a></li>
+			</ul>
 		</div>
-		<div class="col-md-3 column">
-			{{> widgets/widget-tags}}
+		<div class="col-md-2 column">
+			{{!> widgets/widget-tags}}
+			{{!> widgets/widget-links}}
+			<h4 class="fw-b mb15 f16">POPULAR TAGS</h4>
+			<span class="cat-links">
+				{{! Here are some examples below. You can add any tag you want. }}
+				<a href="/tag/tag-one">Tag One</a>
+				<a href="/tag/tag-two">Tag Two</a>
+				<a href="/tag/tag-three">Tag Three</a>
+				<a href="/tag/tag-four">Tag Four</a>
+				<a href="/tag/tag-five">Tag Five</a>
+			</span>
 		</div>
-		<div class="col-md-3 column">
-			{{> widgets/widget-newsletter}}
-		</div>
-	</div>
-
-	<div class="bottom row">
-		<div class="bottom-top col-md-12"></div>
-		<div class="bottom-bottom col-md-12">
+		<div class="col-md-2 column">
+			{{!> widgets/widget-newsletter}}
+			<h4 class="fw-b mb15 f16">FOLLOW US</h4>
 			<ul class="social-links"></ul>
 		</div>
 	</div>

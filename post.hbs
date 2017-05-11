@@ -4,10 +4,9 @@
 <div id="hero"{{#if feature_image}} style="background-image: url('{{img_url feature_image}}')"{{/if}}>
 	<div id="hero-mask"></div>
 	<div class="hero-content">
-		<h1 class="hero-title">{{title}}</h1>
-		<span class="cat-links">
-			{{tags separator=""}}
-		</span>
+		<div class="container">
+			<h1 class="hero-title">{{title}}</h1>
+		</div>
 	</div>
 </div>
 {{/post}}
@@ -18,8 +17,15 @@
  			<div id="primary" class="content-area">
  				<main id="main" class="site-main">
  					{{#post}}
-					<article class="post no-sidebar">
-						<div class="entry-meta clearfix">
+					<article class="post pb30">
+						<div class="entry-header">
+							<h2 class="entry-title"><a href="{{url}}" rel="bookmark">{{title}}</a></h2>
+						</div>
+						<div class="entry-content">
+							{{content}}
+						</div>
+
+						<div class="entry-meta clearfix mt30">
 							<img class="author-image" src="{{img_url primary_author.profile_image}}" alt="{{primary_author.name}}">
 							<div class="right">
 								<span class="author-name">{{primary_author.name}}</span>
@@ -34,12 +40,13 @@
 								</span>
 							</div>
 						</div>
-						<div class="entry-header">
-							<h2 class="entry-title"><a href="{{url}}" rel="bookmark">{{title}}</a></h2>
+
+						<div>
+							<span class="cat-links">
+								{{tags separator=""}}
+							</span>
 						</div>
-						<div class="entry-content">
-							{{content}}
-						</div>
+
 					</article>
 
 					<div id="about-author">
