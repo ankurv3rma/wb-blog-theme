@@ -128,7 +128,7 @@ function initSocialLinks( $ ) {
 
 	for ( var key in links ) {
 		if ( links[ key ] != '' ) {
-			output += '<li><a href="' + links[ key ] + '" target="_blank"><i class="fa fa-' + key + '"></i></a></li>';
+			output += '<li><a href="' + links[ key ] + '" target="_blank"><i class="fa fa-' + key + ' fa-2x"></i></a></li>';
 		}
 	}
 

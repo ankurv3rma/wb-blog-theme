@@ -2,6 +2,7 @@
 
 .hide {display: none;}
 body { font-family: 'Muli', Helvetica, Arial, sans-serif; font-size: 18px; line-height: 1.6;}
+body.post-template {padding-top: 0;}
 
 #navigation-bar {border: none; background-color: rgba(255,255,255,0.9); box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);}
 
@@ -18,11 +19,18 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Muli';}
 }
 #hero #hero-mask {opacity: 0.2}
 #hero .hero-title {font-size: 64px; letter-spacing: -1px; font-family: 'PT Sans'; font-weight: 700; line-height: 1.1; margin: 0;}
+#hero .hero-thumbnail {border-radius: 4px;}
 
 #content {padding-top: 30px;}
 .post {border-bottom: 1px solid #CACACA}
 
 .fine-print {color: #666; font-size: 11px;}
+
+.cat-links > a {border-radius: 4px; color: #666; border: 1px #666 solid; background-color: transparent; }
+.cat-links > a:hover {color: #333; border: 1px #333 solid; background-color: transparent; }
+.pl120 {padding-left: 120px;}
+.relative {position: relative;}
+#hero .autr-avtr { position: absolute; bottom: -20px; left: 10px; width: 80px; height: 80px;  }
 
 /*RTE style*/
 ul.rte-styles { padding:0px; margin: 0;}
@@ -42,8 +50,13 @@ ul.rte-styles { padding:0px; margin: 0;}
 .f26 { font-size:26px}
 
 footer { background-color: #303030; color: white; border-bottom: 5px #EC0868 solid; padding: 40px;}
-footer a { color: #fff; opacity: 0.8;}
+footer a { color: #fff; opacity: 0.6;}
 footer a:hover { color: #fff; opacity: 1;}
+footer .cat-links a {opacity: 0.6; color: #fff; background-color: transparent; border-color: #fff;}
+footer .cat-links a:hover {opacity: 1; color: #fff; background-color: transparent; border-color: #fff;}
+
+.social-links li > a {background-color: transparent; border-radius: 0px; border: none; }
+.social-links li > a:hover {background-color: transparent !important;}
 
 /*Margins*/
 	.m5{ margin:5px;}

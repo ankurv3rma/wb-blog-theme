@@ -4,11 +4,13 @@
 <div id="hero"{{#if cover_image}} style="background-image: url('{{cover_image}}')"{{/if}}>
 	<div id="hero-mask"></div>
 	<div class="hero-content">
-		{{#if profile_image}}<img class="hero-thumbnail" src="{{img_url profile_image}}" alt="{{name}}">{{/if}}
-		<h1 class="hero-title">{{name}}</h1>
-		<div class="hero-description">
-			{{#if location}}<span class="author-location"><i class="fa fa-map-marker"></i> {{location}}</span>{{/if}}
-			{{#if website}}<span class="author-website"><i class="fa fa-globe"></i> <a href="{{website}}">{{website}}</a></span>{{/if}}
+		<div class="container pl120 relative">
+			{{#if profile_image}}<img class="hero-thumbnail autr-avtr" src="{{img_url profile_image}}" alt="{{name}}">{{/if}}
+			<h1 class="hero-title">{{name}}</h1>
+			<div class="hero-description">
+				{{#if location}}<span class="author-location"><i class="fa fa-map-marker"></i> {{location}}</span>{{/if}}
+				{{#if website}}<span class="author-website"><i class="fa fa-globe"></i> <a href="{{website}}">{{website}}</a></span>{{/if}}
+			</div>
 		</div>
 	</div>
 </div>
